@@ -1,0 +1,23 @@
+name = "lousse-gateway"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Use `wrangler secret put JWT_SECRET` in production — never commit real secrets
+JWT_SECRET = "dev-secret-change-in-production"
+
+[[services]]
+binding = "AUTH"
+service = "lousse-auth"
+
+[[services]]
+binding = "CHANNELS"
+service = "lousse-channels"
+
+[[services]]
+binding = "MESSAGES"
+service = "lousse-messages"
+
+[[services]]
+binding = "REALTIME"
+service = "lousse-realtime"
