@@ -1,0 +1,20 @@
+{
+  "name": "lousse",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "type-check": "pnpm -r run type-check",
+    "dev:gateway": "pnpm --filter @lousse/gateway dev",
+    "dev:auth": "pnpm --filter @lousse/auth-worker dev",
+    "dev:channels": "pnpm --filter @lousse/channels-worker dev",
+    "dev:messages": "pnpm --filter @lousse/messages-worker dev",
+    "dev:realtime": "pnpm --filter @lousse/realtime-worker dev",
+    "dev:web": "pnpm --filter @lousse/web dev",
+    "deploy": "pnpm -r run deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.0.0",
+    "typescript": "^5.4.0",
+    "wrangler": "^3.60.0"
+  }
+}
