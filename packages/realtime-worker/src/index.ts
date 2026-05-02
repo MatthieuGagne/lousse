@@ -4,10 +4,8 @@ export interface Env {
 }
 
 export class ChannelDurableObject implements DurableObject {
-  constructor(
-    private readonly state: DurableObjectState,
-    private readonly env: Env,
-  ) {}
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  constructor(_state: DurableObjectState, _env: Env) {}
 
   async fetch(_request: Request): Promise<Response> {
     return new Response('channel-do stub', { status: 200 });
