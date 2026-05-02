@@ -1,0 +1,13 @@
+name = "lousse-auth"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Use `wrangler secret put JWT_SECRET` in production — never commit real secrets
+JWT_SECRET = "dev-secret-change-in-production"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lousse"
+# Replace after running: wrangler d1 create lousse
+database_id = "placeholder-replace-with-d1-id"
