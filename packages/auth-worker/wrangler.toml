@@ -9,5 +9,4 @@ JWT_SECRET = "dev-secret-change-in-production"
 [[d1_databases]]
 binding = "DB"
 database_name = "lousse"
-# Replace after running: wrangler d1 create lousse
-database_id = "placeholder-replace-with-d1-id"
+database_id = "d619268b-da73-444a-abdc-fb829e76f9ad"

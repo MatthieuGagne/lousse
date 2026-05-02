@@ -8,7 +8,7 @@ class_name = "ChannelDurableObject"
 
 [[migrations]]
 tag = "v1"
-new_classes = ["ChannelDurableObject"]
+new_sqlite_classes = ["ChannelDurableObject"]
 
 [[services]]
 binding = "MESSAGES"

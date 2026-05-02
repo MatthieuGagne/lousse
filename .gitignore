@@ -3,3 +3,6 @@ node_modules/
 dist/
 **/.dev.vars
 **/*.local
+.claude/
+package-lock.json
+**/.env
