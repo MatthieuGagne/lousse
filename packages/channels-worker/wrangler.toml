@@ -1,0 +1,9 @@
+name = "lousse-channels"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lousse"
+# Replace after running: wrangler d1 create lousse
+database_id = "placeholder-replace-with-d1-id"
