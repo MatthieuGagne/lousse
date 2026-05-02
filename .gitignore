@@ -1,5 +1,5 @@
 node_modules/
 .wrangler/
 dist/
-.dev.vars
-*.local
+**/.dev.vars
+**/*.local
