@@ -4,7 +4,6 @@ export interface Env {
 }
 
 export class ChannelDurableObject implements DurableObject {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   constructor(_state: DurableObjectState, _env: Env) {}
 
   async fetch(_request: Request): Promise<Response> {
