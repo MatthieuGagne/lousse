@@ -1,0 +1,15 @@
+name = "lousse-realtime"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+[[durable_objects.bindings]]
+name = "CHANNEL"
+class_name = "ChannelDurableObject"
+
+[[migrations]]
+tag = "v1"
+new_classes = ["ChannelDurableObject"]
+
+[[services]]
+binding = "MESSAGES"
+service = "lousse-messages"
